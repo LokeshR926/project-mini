@@ -86,4 +86,17 @@ Example tracing utilities are provided in the `tracer/` directory.
 ChampSim measures the IPC (Instruction Per Cycle) value as a performance metric. <br>
 There are some other useful metrics printed out at the end of simulation. <br>
 
-Good luck and be a champion! <br>
+Good luck and be a champion! <br>    
+if any issues in the building the vcpkg installation the add ca-certificates to the terminal at both ctrl and local certificates 
+ls /etc/ssl/certs
+you can also check the ca-certificates packages which manages this certificates
+dpkg -l | grep ca-certificates
+Adding a new certificate of yours to the list
+sudo cp your-certificate.crt /usr/local/share/ca-certificates/
+update the Ca-certificates
+sudo update-ca-certificates
+sudo update-ca-certificates --verbose
+if bzip2 error in biulding the vcpkg/vcpkg install then use
+sudo apt-get install pkg-config
+check properly if the CMake and c++ and other biulding essentials are built
+    
